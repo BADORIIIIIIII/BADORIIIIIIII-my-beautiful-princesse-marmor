@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Letter with Play Button</title>
+<style>
+  body {
+    background: #ffe4e1;
+    color: #b30059;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .letter {
+    background: #fff0f5cc;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(179, 0, 89, 0.3);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    white-space: pre-wrap;
+  }
+  #play-music-btn {
+    padding: 15px 50px;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    background: #ff66cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 102, 204, 0.7);
+    transition: background 0.3s ease;
+  }
+  #play-music-btn:hover {
+    background: #ff3399;
+  }
+</style>
+</head>
+<body>
+
+<div class="letter">
+I hope you like this... I just wanted to let you know how much I love you, my love.
+I'm so grateful to have such a beautiful girl like you — you changed my life for the better from the moment you walked in.
+You became my soul, and now you're something I can’t live without.
+
+My love for you grows with every second we talk, with every thought I have of you.
+I thank God every day for sending a sweet, beautiful angel like you into my life.
+
+I love spending time with you, even if it's just through the phone — I truly cherish every moment.
+Inshallah, in a few years, we’ll finally be together in person and get to do all the things we planned.
+
+I want to have some beautiful kids — just like you.
+I can’t imagine life without you.
+I want to spend my whole life with you, under your wings and in your arms.
+
+You became my soul that I can’t live without. When I imagine something, you have to be there — I can’t see a future without you in it. 
+May Allah keep you in my life forever.
+I love you so much, Maria, and I’ll love you until my very last heartbeat.
+</div>
+
+<audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2021/09/23/audio_13296ab584.mp3?filename=love-romantic-guitar-13139.mp3" loop></audio>
+
+<button id="play-music-btn">▶️ Play music</button>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const playBtn = document.getElementById('play-music-btn');
+
+  playBtn.addEventListener('click', () => {
+    music.play();
+    playBtn.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
